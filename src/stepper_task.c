@@ -122,6 +122,7 @@ uint8_t stepper_task_is_running(void)
     return _is_running;
 }
 
+// runs everytime the PWM ticks. change tickrate with pPERIOD
 void stepper_update(void const *arg)
 {
 	
